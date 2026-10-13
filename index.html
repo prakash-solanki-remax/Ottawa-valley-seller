@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l!='+l:'';j.async=true;j.src=
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Your Ottawa Valley Home Valuation | Prakash Solanki, REALTOR®</title>
     
-    <!-- Facebook Open Graph Meta Tags (Configured with remax_logo_bann.png) -->
+    <!-- Facebook Open Graph Meta Tags -->
     <meta property="og:title" content="Get Your Ottawa Valley Home Valuation | Prakash Solanki, REALTOR®">
     <meta property="og:description" content="Comprehensive Comparative Market Analysis (CMA) with zero sales pressure and strict confidentiality across the Ottawa Valley.">
     <meta property="og:image" content="https://prakash-solanki-remax.github.io/Ottawa-valley-seller/remax_logo_bann.png">
@@ -355,7 +355,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l!='+l:'';j.async=true;j.src=
             <div class="brand-box">
                 <div class="brand-left">
                     <div class="remax-logo-box">
-                        <img src="remax_logo.png" alt="RE/MAX Logo">
+                        <img src="remax_logo_bann.png" alt="RE/MAX Logo">
                     </div>
                     <div class="agent-details">
                         <span class="agent-name-title">Prakash Solanki, REALTOR®</span>
@@ -431,9 +431,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l!='+l:'';j.async=true;j.src=
                 </div>
             </div>
 
-            <!-- Seller Form Card Column Mapped to Correct Google Form Entry IDs -->
+            <!-- Form Card with Working Iframe & Submit Logic -->
             <div style="width: 100%; max-width: 440px; flex-shrink: 0;">
-                <div class="form-card" id="sellerFormCard">
+                <div class="form-card" id="valuationFormCard">
                     <div style="text-align: center; margin-bottom: 20px;">
                         <h3 style="font-size: 20px; font-weight: 800; color: #0f172a;">Request Your Home Valuation</h3>
                         <p style="font-size: 13px; color: #64748b; margin-top: 4px; font-weight: 600;">Enter your property details below</p>
@@ -441,9 +441,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l!='+l:'';j.async=true;j.src=
                     
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(isSubmitted) { showSuccessMessage(); }"></iframe>
 
-                    <form id="sellerForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe4YjjygNzlaOxqKWwVCqFlm1kyiPvzE90tTzXlUVv6udljlw/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted();">
-                        <input type="hidden" name="form-name" value="ottawaValleySellerLead" />
-
+                    <form id="valuationForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe4YjjygNzlaOxqKWwVCqFlm1kyiPvzE90tTzXlUVv6udljlw/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted();">
                         <div class="form-group">
                             <label class="form-label">Property Address / Location</label>
                             <div class="form-input-wrap">
@@ -526,7 +524,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l!='+l:'';j.async=true;j.src=
         <div class="footer-container">
             <div class="footer-brand-box">
                 <div class="footer-logo-badge">
-                    <img src="remax_logo.png" alt="RE/MAX Logo">
+                    <img src="remax_logo_bann.png" alt="RE/MAX Logo">
                 </div>
                 <div>
                     <div class="footer-agent-signoff">Prakash Solanki, REALTOR®</div>
@@ -567,8 +565,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l!='+l:'';j.async=true;j.src=
         }
 
         function showSuccessMessage() {
-            const formCard = document.getElementById('sellerFormCard');
-            document.getElementById('sellerForm').style.display = 'none';
+            const formCard = document.getElementById('valuationFormCard');
+            document.getElementById('valuationForm').style.display = 'none';
             document.getElementById('formSuccess').style.display = 'block';
             formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
@@ -580,4 +578,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 </body>
 </html>
-What t
