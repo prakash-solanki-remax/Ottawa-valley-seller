@@ -84,6 +84,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin-top: 8px;
         }
 
+        /* Professional Agent Profile Card Styling */
+        .agent-card {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1.5px solid rgba(0, 51, 153, 0.8);
+            border-radius: 16px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+            margin-top: 6px;
+            position: relative;
+            overflow: hidden;
+        }
+        .agent-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #dc2626;
+        }
+        .agent-photo-frame {
+            width: 82px;
+            height: 82px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 2px solid #dc2626;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            flex-shrink: 0;
+            background-color: #0f172a;
+        }
+        .agent-photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+        }
+
         .form-card { background: rgba(255, 255, 255, 0.99); color: #0f172a; padding: 24px 20px; border-radius: 18px; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.7), 0 0 25px rgba(0, 51, 153, 0.3); border: 2px solid #003399; width: 100%; max-width: 440px; margin: 0 auto; }
         @media(min-width: 768px) { .form-card { padding: 32px; } }
         .form-group { margin-bottom: 14px; }
@@ -210,6 +251,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <p style="font-size: 15px; color: #cbd5e1; line-height: 1.55;">
                     Whether you are planning to list your home soon or simply curious about your property value, get a customized market evaluation delivered directly to you across Pembroke, Petawawa & Deep River.
                 </p>
+
+                <!-- AGENT IDENTITY CARD WITH PHOTO & RE/MAX AUTHORIZED BADGE -->
+                <div class="agent-card">
+                    <div class="agent-photo-frame">
+                        <img src="Prakash_new_pic.PNG" alt="Prakash Solanki, REALTOR®">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 3px; min-width: 0;">
+                        <!-- RE/MAX Logo + Authorized Agent Badge -->
+                        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                            <img src="Remax_with_balloon_2.jpg" alt="RE/MAX Logo" style="height: 18px; width: auto; object-fit: contain; background: #ffffff; padding: 1px 4px; border-radius: 4px;" onerror="this.onerror=null; this.src='Remax_with_balloon.jpg';">
+                            <span style="font-size: 10px; font-weight: 800; color: #60a5fa; text-transform: uppercase; letter-spacing: 0.06em; background: rgba(0, 51, 153, 0.5); padding: 2px 8px; border-radius: 9999px; border: 1px solid rgba(96, 165, 250, 0.4);">
+                                Authorized RE/MAX® Agent
+                            </span>
+                        </div>
+
+                        <h4 style="font-size: 17px; font-weight: 800; color: #ffffff; line-height: 1.2; margin-top: 2px;">
+                            Prakash Solanki, <span style="color: #60a5fa; font-weight: 700;">REALTOR®</span>
+                        </h4>
+                        
+                        <p style="font-size: 12px; color: #cbd5e1; font-weight: 600;">
+                            RE/MAX Pembroke Realty Ltd., Brokerage
+                        </p>
+
+                        <a href="tel:16132033313" style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 800; color: #ef4444; text-decoration: none; margin-top: 2px;">
+                            <i class="fa-solid fa-phone" style="font-size: 12px;"></i>
+                            <span>(613) 203-3313</span>
+                        </a>
+                    </div>
+                </div>
 
                 <!-- SELLER FEATURE CARD BOX -->
                 <div class="feature-box">
