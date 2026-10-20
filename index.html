@@ -84,19 +84,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin-top: 8px;
         }
 
-        /* Professional Agent Profile Card Styling */
+        /* Responsive Agent Profile Card Styling matching image reference */
         .agent-card {
             background: rgba(15, 23, 42, 0.95);
             border: 1.5px solid rgba(0, 51, 153, 0.8);
             border-radius: 16px;
-            padding: 16px 20px;
+            padding: 18px 16px;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 18px;
+            text-align: center;
+            gap: 14px;
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
             margin-top: 6px;
             position: relative;
             overflow: hidden;
+        }
+        @media(min-width: 480px) {
+            .agent-card {
+                flex-direction: row;
+                align-items: center;
+                text-align: left;
+                padding: 18px 20px;
+                gap: 18px;
+            }
         }
         .agent-card::before {
             content: '';
@@ -108,14 +119,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             background: #dc2626;
         }
         .agent-photo-frame {
-            width: 82px;
-            height: 82px;
+            width: 110px;
+            height: 110px;
             border-radius: 14px;
             overflow: hidden;
             border: 2px solid #dc2626;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
             flex-shrink: 0;
             background-color: #0f172a;
+        }
+        @media(min-width: 480px) {
+            .agent-photo-frame {
+                width: 100px;
+                height: 100px;
+            }
         }
         .agent-photo-frame img {
             width: 100%;
@@ -252,14 +269,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     Whether you are planning to list your home soon or simply curious about your property value, get a customized market evaluation delivered directly to you across Pembroke, Petawawa & Deep River.
                 </p>
 
-                <!-- AGENT IDENTITY CARD WITH PHOTO & RE/MAX AUTHORIZED BADGE -->
+                <!-- AGENT IDENTITY CARD WITH LARGER PHOTO & MATCHING LAYOUT -->
                 <div class="agent-card">
                     <div class="agent-photo-frame">
                         <img src="Prakash_new_pic.PNG" alt="Prakash Solanki, REALTOR®">
                     </div>
-                    <div style="display: flex; flex-direction: column; gap: 3px; min-width: 0;">
+                    <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0; align-items: center;" class="sm:items-start">
                         <!-- RE/MAX Logo + Authorized Agent Badge -->
-                        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;" class="sm:justify-start">
                             <img src="Remax_with_balloon_2.jpg" alt="RE/MAX Logo" style="height: 18px; width: auto; object-fit: contain; background: #ffffff; padding: 1px 4px; border-radius: 4px;" onerror="this.onerror=null; this.src='Remax_with_balloon.jpg';">
                             <span style="font-size: 10px; font-weight: 800; color: #60a5fa; text-transform: uppercase; letter-spacing: 0.06em; background: rgba(0, 51, 153, 0.5); padding: 2px 8px; border-radius: 9999px; border: 1px solid rgba(96, 165, 250, 0.4);">
                                 Authorized RE/MAX® Agent
