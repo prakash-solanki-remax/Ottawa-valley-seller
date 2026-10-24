@@ -707,6 +707,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             const nameInput = document.getElementById("sellerName");
             const phoneInput = document.getElementById("sellerPhone");
             const emailInput = document.getElementById("sellerEmail");
+          // Auto-focus cursor directly into the Property Address field on page load
+            addressInput.focus();
 
             const preventTapIfPhoneInvalid = function(e) {
                 const cleanDigits = phoneInput.value.replace(/\D/g, '');
