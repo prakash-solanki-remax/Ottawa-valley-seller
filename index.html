@@ -270,20 +270,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-remax-red selection:text-white">
 
-    <!-- 1. MAIN NAVIGATION HEADER -->
+<!-- 1. MAIN NAVIGATION HEADER -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200 w-full">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2 sm:py-2.5 flex items-center justify-between gap-2 w-full">
             
-            <!-- Left Side: Agent Branding -->
-            <a href="#" class="flex items-center gap-2 min-w-0 flex-shrink">
-                <div class="min-w-0">
-                    <span class="text-sm sm:text-lg lg:text-xl font-black tracking-tight text-slate-900 block leading-tight truncate">
-                        Prakash Solanki, <span class="text-remax-blue font-bold text-xs sm:text-base">REALTOR®</span>
-                    </span>
-                    <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-600 block leading-tight truncate">RE/MAX Pembroke Realty Ltd.</span>
-                    <span class="text-[9px] sm:text-[10px] font-semibold text-slate-500 block mt-0.5 truncate">10A Canadian Forces Dr., Petawawa, ON</span>
-                </div>
-            </a>
+            <!-- Left Side: Home Button + Agent Branding -->
+            <div class="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink">
+                <!-- Home Button -->
+                <a href="https://solankihomes.ca" title="Return to Main Home Page" class="bg-slate-100 hover:bg-remax-blue hover:text-white text-slate-800 border border-slate-300 p-2 sm:px-3 sm:py-1.5 rounded-xl text-xs font-extrabold transition flex items-center gap-1.5 shadow-sm flex-shrink-0">
+                    <i class="fa-solid fa-house text-remax-red text-sm"></i>
+                    <span class="hidden sm:inline">Home</span>
+                </a>
+
+                <!-- Agent Branding -->
+                <a href="https://solankihomes.ca" class="min-w-0 flex-shrink truncate">
+                    <div class="min-w-0">
+                        <span class="text-sm sm:text-lg lg:text-xl font-black tracking-tight text-slate-900 block leading-tight truncate">
+                            Prakash Solanki, <span class="text-remax-blue font-bold text-xs sm:text-base">REALTOR®</span>
+                        </span>
+                        <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-600 block leading-tight truncate">RE/MAX Pembroke Realty Ltd.</span>
+                    </div>
+                </a>
+            </div>
 
             <!-- Right Side: RE/MAX Logo Top + Phone Number Underneath -->
             <div class="flex flex-col items-end flex-shrink-0 gap-1">
@@ -299,7 +307,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         </div>
     </header>
-
+  
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
